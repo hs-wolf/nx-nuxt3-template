@@ -30,5 +30,27 @@ export default defineNuxtConfig({
         autoImports: ['acceptHMRUpdate', 'defineStore', 'storeToRefs'],
       },
     ],
+    [
+      '@nuxtjs/i18n',
+      {
+        locales: [
+          {
+            code: 'en',
+            file: 'en-US.yaml',
+          },
+          {
+            code: 'pt',
+            file: 'pt-BR.yaml',
+          },
+        ],
+        defaultLocale: 'en',
+        lazy: true,
+        langDir: 'locales',
+        vueI18n: {
+          locale: 'en',
+          fallbackLocale: 'en',
+        },
+      },
+    ],
   ],
 });

@@ -20,5 +20,15 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
   },
-  modules: ['@nuxtjs/robots', '@nuxtjs/tailwindcss', '@vueuse/nuxt'],
+  modules: [
+    '@nuxtjs/robots',
+    '@nuxtjs/tailwindcss',
+    '@vueuse/nuxt',
+    [
+      '@pinia/nuxt',
+      {
+        autoImports: ['acceptHMRUpdate', 'defineStore', 'storeToRefs'],
+      },
+    ],
+  ],
 });

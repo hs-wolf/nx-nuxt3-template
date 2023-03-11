@@ -5,7 +5,9 @@
   "scripts": {},
   "private": true,
   "dependencies": {
-    "@nuxtjs/robots": "^3.0.0"
+    "@nuxtjs/robots": "^3.0.0",
+    "@pinia/nuxt": "^0.4.7",
+    "pinia": "^2.0.33"
   },
   "devDependencies": {
     "@nrwl/workspace": "15.8.6",
@@ -15,5 +17,8 @@
     "nuxt": "^3.2.3",
     "nx": "15.8.6",
     "prettier": "^2.6.2"
+  },
+  "overrides": {
+    "vue": "latest"
   }
 }

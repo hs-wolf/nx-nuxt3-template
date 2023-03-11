@@ -1,0 +1,7 @@
+body {
+  @apply antialiased;
+}
+
+.nuxt-icon svg {
+  margin-bottom: 0 !important;
+}

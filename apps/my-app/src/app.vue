@@ -1,3 +1,3 @@
 <template>
-  <div>my-app</div>
+  <div class="flex">my-app</div>
 </template>

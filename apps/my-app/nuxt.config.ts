@@ -29,10 +29,19 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     'nuxt-icons',
     '@nuxt/image-edge',
+    '@nuxtjs/eslint-module',
   ],
+  // https://github.com/nuxt-community/robots-module
+  robots: {},
+  // https://github.com/nuxt-modules/tailwindcss
+  tailwindcss: {},
+  // https://github.com/vueuse/vueuse
+  vueuse: {},
+  // https://github.com/vuejs/pinia/tree/v2/packages/nuxt
   pinia: {
     autoImports: ['acceptHMRUpdate', 'defineStore', 'storeToRefs'],
   },
+  // https://github.com/nuxt-modules/i18n
   i18n: {
     locales: [
       {
@@ -52,5 +61,8 @@ export default defineNuxtConfig({
       fallbackLocale: 'en',
     },
   },
+  // https://github.com/gitFoxCode/nuxt-icons
+  nuxtIcons: {},
+  // https://github.com/nuxt/image
   image: {},
 });

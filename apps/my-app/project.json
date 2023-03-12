@@ -33,6 +33,12 @@
       "options": {
         "command": "npx nuxi prepare ./apps/my-app"
       }
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx eslint --fix ./apps/my-app"
+      }
     }
   },
   "tags": []

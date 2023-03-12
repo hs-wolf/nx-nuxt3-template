@@ -6,10 +6,10 @@ export const useAlertsStore = defineStore(ALERTS_STORE_ID, {
   state: (): IState => ({}),
   getters: {},
   actions: {
-    handleError(error: unknown) {
+    handleError (error: unknown) {
       console.error('🛑 ERROR:', error);
     },
-    handleWarning(error: unknown) {
+    handleWarning (error: unknown) {
       console.log('⚠️ WARNING:', error);
     },
   },

@@ -65,4 +65,6 @@ export default defineNuxtConfig({
   nuxtIcons: {},
   // https://github.com/nuxt/image
   image: {},
+  // https://github.com/nuxt-community/eslint-module
+  eslint: { fix: true },
 });

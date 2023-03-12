@@ -7,8 +7,8 @@ const localePath = useLocalePath();
   <div class="flex flex-col items-center gap-2">
     <h1>my-app</h1>
     <NuxtIcon name="logo" filled />
-    <NuxtLink :to="localePath({ name: 'second' })">
-      {{ $t('go-to-second-page') }}
+    <NuxtLink :to="localePath({ name: 'index' })">
+      {{ $t('go-to-first-page') }}
     </NuxtLink>
     <NuxtImg
       src="/nuxt-logo.png"

@@ -25,34 +25,32 @@ export default defineNuxtConfig({
     '@nuxtjs/robots',
     '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
-    [
-      '@pinia/nuxt',
-      {
-        autoImports: ['acceptHMRUpdate', 'defineStore', 'storeToRefs'],
-      },
-    ],
-    [
-      '@nuxtjs/i18n',
-      {
-        locales: [
-          {
-            code: 'en',
-            file: 'en-US.yaml',
-          },
-          {
-            code: 'pt',
-            file: 'pt-BR.yaml',
-          },
-        ],
-        defaultLocale: 'en',
-        lazy: true,
-        langDir: 'locales',
-        vueI18n: {
-          locale: 'en',
-          fallbackLocale: 'en',
-        },
-      },
-    ],
+    '@pinia/nuxt',
+    '@nuxtjs/i18n',
     'nuxt-icons',
+    '@nuxt/image-edge',
   ],
+  pinia: {
+    autoImports: ['acceptHMRUpdate', 'defineStore', 'storeToRefs'],
+  },
+  i18n: {
+    locales: [
+      {
+        code: 'en',
+        file: 'en.yaml',
+      },
+      {
+        code: 'pt',
+        file: 'pt.yaml',
+      },
+    ],
+    defaultLocale: 'en',
+    lazy: true,
+    langDir: 'locales',
+    vueI18n: {
+      locale: 'en',
+      fallbackLocale: 'en',
+    },
+  },
+  image: {},
 });

@@ -1,4 +1,6 @@
 go-to-first-page: Go to first page
 go-to-second-page: Go to second page
+go-to-testing-page: Go to testing page
 change-to-english: Change to English
 change-to-portuguese: Change to Portuguese
+testing-counter: Counter {value}

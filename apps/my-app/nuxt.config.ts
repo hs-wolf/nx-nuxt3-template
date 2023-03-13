@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   nitro: {
     output: {
-      dir: '~~/../../dist/apps/my-app',
+      dir: '../../../../dist/apps/my-app',
     },
   },
   srcDir: 'src/',

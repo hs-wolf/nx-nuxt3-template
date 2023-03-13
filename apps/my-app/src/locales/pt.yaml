@@ -1,4 +1,6 @@
 go-to-first-page: Ir para a primeira página
 go-to-second-page: Ir para a segunda página
+go-to-testing-page: Ir para a página teste
 change-to-english: Mudar para Inglês
 change-to-portuguese: Mudar para Português
+testing-counter: Contador {value}

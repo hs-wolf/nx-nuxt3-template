@@ -1,4 +1,6 @@
 <script setup lang="ts">
+definePageMeta({ middleware: ['counter-check'] });
+
 const localePath = useLocalePath();
 </script>
 
@@ -9,8 +11,5 @@ const localePath = useLocalePath();
     <NuxtLink :to="localePath({ name: 'index' })">
       {{ $t('go-to-first-page') }}
     </NuxtLink>
-    <NuxtImg src="/nuxt-logo.png" width="256" height="256" alt="Nuxt Logo" loading="lazy" />
-    <ChangeLocales />
-    <TestingCounter />
   </div>
 </template>

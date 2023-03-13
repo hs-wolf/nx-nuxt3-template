@@ -1,19 +1,20 @@
 {
   "extends": ["@nuxtjs/eslint-config-typescript"],
   "rules": {
-    "no-console": "off",
+    "array-bracket-spacing": ["error", "never"],
     "comma-dangle": ["error", "always-multiline"],
-    "semi": ["error", "always"],
+    "computed-property-spacing": ["error", "never"],
     "curly": "error",
     "indent": ["error", 2],
     "no-confusing-arrow": "error",
+    "no-console": "off",
     "no-tabs": "error",
-    "quotes": ["error", "single", { "avoidEscape": true }],
-    "array-bracket-spacing": ["error", "never"],
-    "object-curly-spacing": ["error", "always"],
-    "computed-property-spacing": ["error", "never"],
-    "space-in-parens": ["error", "never"],
     "no-unused-vars": "error",
+    "object-curly-spacing": ["error", "always"],
+    "quotes": ["error", "single", { "avoidEscape": true }],
+    "semi": ["error", "always"],
+    "space-before-function-paren": "off",
+    "space-in-parens": ["error", "never"],
     "@typescript-eslint/no-unused-vars": [
       "error",
       {
